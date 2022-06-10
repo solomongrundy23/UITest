@@ -6,13 +6,13 @@ namespace UITests.Tests
     {
         public AppManager.ApplicationManager appManager;
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void InitTest()
         { 
             appManager = new AppManager.ApplicationManager();
         }
 
-        [TestFixtureTearDown]
+        [TearDown]
         public void CloseTest()
         { 
             appManager.StopManager();

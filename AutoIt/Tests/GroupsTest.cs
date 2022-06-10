@@ -15,7 +15,7 @@ namespace UITests.Tests
         public void GroupCreate()
         {
             var group = GroupData.GetRandom();
-            appManager.MainWindowController.PressNew()
+            appManager.ContactsController.PressNew()
                       .GroupsController.AddGroup(group)
                       .GroupsController.GetGroups(out var groups);
             Assert.IsTrue(groups.Contains(group));
@@ -24,7 +24,7 @@ namespace UITests.Tests
         [Test]
         public void GroupRemove()
         {
-            appManager.MainWindowController.PressNew()
+            appManager.ContactsController.PressNew()
                       .GroupsController.GetGroups(out var groups);
             GroupData group;
             if (groups.Count() == 0)

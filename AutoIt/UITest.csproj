@@ -80,12 +80,13 @@
     <Compile Include="AppManager\BaseController.cs" />
     <Compile Include="AppManager\ContactsController.cs" />
     <Compile Include="AppManager\GroupsController.cs" />
-    <Compile Include="AppManager\MainWindowController.cs" />
     <Compile Include="Helpers\Exts.cs" />
+    <Compile Include="Models\ContactData.cs" />
     <Compile Include="Models\GroupData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\BaseTest.cs" />
+    <Compile Include="Tests\ContactsTest.cs" />
     <Compile Include="Tests\GroupsTest.cs" />
   </ItemGroup>
   <ItemGroup>

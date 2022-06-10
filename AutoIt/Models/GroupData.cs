@@ -23,6 +23,11 @@ namespace UITests.Models
             };
         }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
         public bool Equals(GroupData other)
         {
             return Name == other.Name;

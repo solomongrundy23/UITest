@@ -45,15 +45,5 @@ namespace UITests.AppManager
                 return contactsController;
             }
         }
-
-        private MainWindowController mainWindowController;
-        public MainWindowController MainWindowController
-        {
-            get
-            {
-                if (mainWindowController == null) mainWindowController = new MainWindowController(this);
-                return mainWindowController;
-            }
-        }
     }
 }
